@@ -1,0 +1,16 @@
+Age,Attrition,MonthlyIncome,YearsAtCompany,OverTime,JobSatisfaction
+35,No,5000,8,No,4
+28,Yes,3200,2,Yes,2
+42,No,7500,12,No,3
+31,Yes,3800,3,Yes,1
+29,No,4200,5,No,4
+45,No,8200,15,No,3
+26,Yes,2900,1,Yes,2
+38,No,6500,9,No,4
+33,Yes,4000,4,Yes,1
+41,No,7200,11,No,3
+30,Yes,3500,2,Yes,2
+36,No,5800,7,No,4
+27,Yes,3100,1,Yes,1
+44,No,9000,16,No,4
+32,No,4600,6,No,3
