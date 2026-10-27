@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException, Query, status
 from sqlalchemy import or_, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import selectinload
-from sqlalchemy import Date, ForeignKey, Numeric, String, Text
+
 from app.core.dependencies import DbSession, HRUser
 from app.core.security import hash_password
 from app.models import Department, Employee, Role, User

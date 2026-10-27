@@ -49,6 +49,10 @@ from app.api.employee_risk_alert import (
 from app.api.employee_risk_alert_actions import (
     router as employee_risk_alert_actions_router,
 )
+from app.api.employee_risk_alert_dashboard import (
+    router as employee_risk_alert_dashboard_router,
+)
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Create tables that do not already exist.
@@ -111,7 +115,7 @@ app.include_router(workforce_kpi_breach_router, prefix="/api")
 app.include_router(employee_risk_monitoring_router, prefix="/api")
 app.include_router(employee_risk_alert_router, prefix="/api")
 app.include_router(employee_risk_alert_actions_router,prefix="/api",)
-
+app.include_router(employee_risk_alert_dashboard_router,prefix="/api",)
 # Health-check endpoint to verify that the backend is running.
 @app.get("/health")
 def health_check():

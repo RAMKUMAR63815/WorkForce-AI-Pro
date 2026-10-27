@@ -54,6 +54,7 @@ def create_department(
         raise HTTPException(409, "Department already exists") from None
 
     return department
+    
 @router.get("/statistics")
 def department_statistics(
     db: DbSession,
