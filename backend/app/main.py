@@ -52,6 +52,7 @@ from app.api.employee_risk_alert_actions import (
 from app.api.employee_risk_alert_dashboard import (
     router as employee_risk_alert_dashboard_router,
 )
+from app.api.reports import router as reports_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -116,6 +117,10 @@ app.include_router(employee_risk_monitoring_router, prefix="/api")
 app.include_router(employee_risk_alert_router, prefix="/api")
 app.include_router(employee_risk_alert_actions_router,prefix="/api",)
 app.include_router(employee_risk_alert_dashboard_router,prefix="/api",)
+app.include_router(
+    reports_router,
+    prefix="/api",
+)
 # Health-check endpoint to verify that the backend is running.
 @app.get("/health")
 def health_check():
